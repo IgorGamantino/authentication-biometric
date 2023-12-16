@@ -4,8 +4,8 @@
 
 
 <center>
-<video src="./src/assets/android.mp4" controls title="Title"></video>
- <video src="./src/assets/ios.mp4" controls title="Title"></video>
+<image src="./src/assets/android.gif" />
+ <image src="./src/assets/ios.gif"/>
 </center>
 
 
