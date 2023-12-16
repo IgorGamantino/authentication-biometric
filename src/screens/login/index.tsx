@@ -10,14 +10,7 @@ import { StackNavigationProp } from "@react-navigation/stack";
 
 
 export function Login () {
-  
   const { navigate } = useNavigation();
-async function verifyAvailableAuthentication() {
-    const isCompatible = await LocalAuthentication.hasHardwareAsync();
-
-    return isCompatible
-}
-
 
  async function handleAuthentication() {
     const auth = await LocalAuthentication.authenticateAsync({
@@ -25,12 +18,12 @@ async function verifyAvailableAuthentication() {
       fallbackLabel: "Authenticação falhou, tente com sua senha!"
     })
 
-    if(auth){
 
-      console.warn('ola')
+    console.log(auth)
+
+    if(auth.success){
      navigate('Home');
     }else {
-      console.warn('error')
     }
   
  }
