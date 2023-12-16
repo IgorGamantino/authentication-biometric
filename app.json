@@ -1,5 +1,13 @@
 {
   "expo": {
+   
+    "plugins": [
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow $(PRODUCT_NAME) to use Face ID."
+        }
+      ]],
     "name": "authentication-biometric",
     "slug": "authentication-biometric",
     "version": "1.0.0",
@@ -34,14 +42,6 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      [
-        "expo-local-authentication",
-        {
-          "faceIDPermission": "Allow $(PRODUCT_NAME) to use Face ID."
-        }
-      ]
-    ]
+    }
   }
 }

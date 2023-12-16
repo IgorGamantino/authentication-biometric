@@ -27,8 +27,10 @@ async function verifyAvailableAuthentication() {
 
     if(auth){
 
-      console.log('ola')
+      console.warn('ola')
      navigate('Home');
+    }else {
+      console.warn('error')
     }
   
  }
