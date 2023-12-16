@@ -4,8 +4,8 @@
 
 
 <center>
-<image src="./src/assets/android.gif" />
- <image src="./src/assets/ios.gif"/>
+<image src="./src/assets/android.gif" width="300px"/>
+ <image src="./src/assets/ios.gif" width="300px" />
 </center>
 
 
