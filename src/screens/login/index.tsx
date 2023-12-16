@@ -2,13 +2,16 @@
 import {View,Text, ImageBackground, TextInput, TouchableOpacity} from "react-native"
 import backgroundImg from "../../assets/background.png"
 import { styles } from "./styles"
-
+import {useNavigation} from '@react-navigation/native';
 
 import * as LocalAuthentication from "expo-local-authentication"
-import { useEffect } from "react";
+import { StackNavigationProp } from "@react-navigation/stack";
+
+
+
 export function Login () {
   
-
+  const { navigate } = useNavigation();
 async function verifyAvailableAuthentication() {
     const isCompatible = await LocalAuthentication.hasHardwareAsync();
 
@@ -23,7 +26,9 @@ async function verifyAvailableAuthentication() {
     })
 
     if(auth){
-      console.log("logado")
+
+      console.log('ola')
+     navigate('Home');
     }
   
  }
